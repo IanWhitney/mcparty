@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Reason.create(name: "A visit from Bret Kramer, Maria Cedroni and their daughter Lilah")
+Reason.create(name: "Ian & Laura's 5th anniversary")
+Reason.create(name: "Tasty, slow-cooked bbq pork")
+Reason.create(name: "Premature birthday party for Evelyn and/or Laura")
+Reason.create(name: "Ian & Laura's new deck")
+Reason.create(name: "2nd Anniversary of the freeing of the Chilean Miners")

@@ -9,9 +9,9 @@ gem 'pg'
 gem 'heroku'
 gem 'heroku_san'
 
-group :development do
+# group :development, :test do
   gem 'sqlite3'
-end
+# end
 
 # Gems used only for assets and not required
 # in production environments by default.
