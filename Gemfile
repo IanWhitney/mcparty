@@ -10,7 +10,7 @@ gem 'heroku'
 gem 'heroku_san'
 
 # group :development, :test do
-  gem 'sqlite3'
+  # gem 'sqlite3'
 # end
 
 # Gems used only for assets and not required
