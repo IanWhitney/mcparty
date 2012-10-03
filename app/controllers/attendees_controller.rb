@@ -28,4 +28,8 @@ class AttendeesController < ApplicationController
       format.js { render file}
     end    
   end
+  
+  def index
+    @attendees = Attendee.all
+  end
 end
