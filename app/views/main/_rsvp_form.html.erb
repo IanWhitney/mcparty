@@ -1,0 +1,13 @@
+<h3>Finish up that rsvp, you tiny dancer.</h3>
+<%= form_for @attendee, :remote => true do |f| %>
+  <%= f.label :name, "Your Name" %><br />
+  <%= f.text_field :name %><br />
+  <%= f.label :count, "How Many People (include yourself and children)" %><br />
+  <%= f.text_field :count %><br />
+  <%= f.fields_for @attendee.reason do |reason_fields| %>
+    <%= reason_fields.hidden_field :id %>
+    <%= reason_fields.label :name, "Your Reason For Partying", :style => "display:none", :id => "attendee_reason_name_label" %><br />
+    <%= reason_fields.text_field :name, :style => "display:none;width:90%;" %><br />
+  <% end %>
+  <%= f.submit "I've made my choice" %>
+<% end %>

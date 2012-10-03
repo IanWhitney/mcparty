@@ -1,12 +1,19 @@
+<div id='left' class='grid_12'>
     <h1>Multiple Choice Party</h1>
-    <h2>Saturday, October 13 &mdash; 3pm &ndash; 10</h2>
+    <h2>Saturday, October 13<br />4pm</h2>
+    <p>It only takes one reason to throw a party, but in our case we have <em>too many</em> reasons. So it is up to you to decide why you are attending our party. <strong>Choose your reason</strong>!</p>
+    <ul id='reason_list'>
+      <%= render :partial => 'reason_list' %>
+    </ul>
+    <p>Snacks and drinks start at 4. Later on we'll break out heartier foods, including some slow-cooked bbq pork. A firepit is a possibility&hellip;if you play your cards right.</p>
     <address>
       <a href="http://goo.gl/maps/w9fNs">3301 39th Avenue South<br />
       Minneapolis MN 55406</a>
     </address>
-    <p>It only takes one reason to throw a party, but in our case we have <em>too many</em> reasons. So it is up to you to decide why you are attending our party. Choose your reason!</p>
-    <ul>
-      <%= render @reasons %>
-      <li>I have another reason</li>
-    </ul>
-    <p>We'll have food, drinks, etc. Maybe even a firepit.</p>
+</div>
+<div id='right' class='grid_5' style='display:none;'>
+  <div id='rsvp'>
+    <%= render :partial => 'rsvp_form' %>
+    <p id='response'></p>
+  </div>  
+</div>

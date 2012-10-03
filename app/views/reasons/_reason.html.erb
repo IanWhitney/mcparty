@@ -1,1 +1,3 @@
-<li><%= reason.name %> (<%= reason.attendees.count %>)</li>
+<li id="reason_<%= reason.id %>">
+  <%= link_to_function reason.name, "clear_selected();pick_reason(this)", {"data-value" => reason.id} %> (<%= reason.attendees.count %>)
+</li>

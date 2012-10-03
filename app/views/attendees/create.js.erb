@@ -1,0 +1,6 @@
+$('#reason_list').html("<%= escape_javascript(render :partial => 'main/reason_list') %>");
+$('#right').html("<h3>Word. See you on the 13th</h3>");
+$('#right').hide(5000, function() {
+  $('#right').html("<%= escape_javascript(render :partial => 'main/rsvp_form') %>");
+  hide_right();
+});

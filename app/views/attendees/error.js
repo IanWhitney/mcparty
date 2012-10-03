@@ -1,0 +1,1 @@
+$('#response').html("<p>Try that again. Give me at least a name and a number of people.</p>")
